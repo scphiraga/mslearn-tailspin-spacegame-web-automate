@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
         "serverfarms_tailspin_space_game_asp_name": {
@@ -68,7 +68,11 @@
             },
             "kind": "app",
             "properties": {
-                "name": "[parameters('serverfarms_tailspin_space_game_asp_name')]"
+                "name": "[parameters('serverfarms_tailspin_space_game_asp_name')]",
+                "perSiteScaling": false,
+                "reserved": false,
+                "targetWorkerCount": 0,
+                "targetWorkerSizeId": 0
             }
         },
         {
