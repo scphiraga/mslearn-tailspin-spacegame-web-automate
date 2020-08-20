@@ -68,11 +68,7 @@
             },
             "kind": "app",
             "properties": {
-                "name": "[parameters('serverfarms_tailspin_space_game_asp_name')]",
-                "perSiteScaling": false,
-                "reserved": false,
-                "targetWorkerCount": 0,
-                "targetWorkerSizeId": 0
+                "name": "[parameters('serverfarms_tailspin_space_game_asp_name')]"
             }
         },
         {
